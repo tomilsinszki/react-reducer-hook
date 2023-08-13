@@ -17,6 +17,8 @@ const passwordReducer = (state : any, action: any) => {
 };
 
 const Login = (props: {loginHandler(username : string, password : string) : void}) => {
+    // NOTE: useReducer is great when we have a number of related states
+
     const [usernameState, dispatchUsername] = useReducer(usernameReducer, { value: '', isValid: false });
     const [passwordState, dispatchPassword] = useReducer(passwordReducer, { value: '', isValid: false });
     const [formIsValid, setFormIsValid] = useState(false);

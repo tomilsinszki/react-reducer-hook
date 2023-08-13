@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Home = () => {
+const Home = (props: {logoutHandler(): void}) => {
     return (
         <div>
-            You are logged in!
+            <div>
+                You are logged in!
+            </div>
+            <div>
+                <button onClick={props.logoutHandler}>Logout</button>
+            </div>
         </div>
     );
 };

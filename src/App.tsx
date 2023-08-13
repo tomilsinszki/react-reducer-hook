@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {!isLoggedIn && <Login loginHandler={loginHandler} />}
-        {isLoggedIn && <Home />}
+        {isLoggedIn && <Home logoutHandler={logoutHandler} />}
       </header>
     </div>
   );

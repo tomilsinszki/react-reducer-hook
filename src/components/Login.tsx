@@ -10,18 +10,10 @@ const Login = (props: {loginHandler(username : string, password : string) : void
     };
 
     const usernameChangedHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-        if (event.target.value.trim() === '') {
-            return;
-        }
-
         setUsername(event.target.value);
     };
 
     const passwordChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-        if (event.target.value.trim() === '') {
-            return;
-        }
-
         setPassword(event.target.value);
     };
 

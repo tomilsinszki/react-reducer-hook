@@ -26,7 +26,7 @@ const Login = (props: {loginHandler(username : string, password : string) : void
 
     useEffect(() => {
         const timerId = setTimeout(() => {
-            setFormIsValid(usernameState.isValid && passwordState.isValid)
+            setFormIsValid(isUsernameValid && isPasswordValid)
         });
 
         return () => {

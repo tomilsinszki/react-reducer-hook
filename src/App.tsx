@@ -33,7 +33,7 @@ function App() {
     console.log('RUNS AFTER THE FIRST TIME THE COMPONENT WAS LOADED + WHEN isLoggedIn CHANGES');
 
     return () => {
-      console.log('RUNS BEFORE EACH RELOAD - BUT NOT BEFORE THE ORIGINAL RELOAD')
+      console.log('CLEAN UP FUNCTION; RUNS EACH TIME THE COMPONENT IS DESTROYED')
     };
   }, [isLoggedIn]);
   */
